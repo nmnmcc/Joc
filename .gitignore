@@ -1,0 +1,13 @@
+.DS_Store
+.direnv/
+.devenv/
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+.swiftpm/
+Package.resolved
+.idea/
+.vscode/
+*.swp

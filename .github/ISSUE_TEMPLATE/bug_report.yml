@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible problem with Joc
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues before opening a new report. Do not include passwords, private keys, or personal CloudKit data.
+  - type: input
+    id: version
+    attributes:
+      label: Joc version or commit
+      placeholder: "main @ abc1234"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: macOS and device versions
+      placeholder: "macOS 15.0, iOS 18.0, watchOS 26.0"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: Tell us the smallest sequence that demonstrates the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and logs
+      description: Remove personal data before posting logs.
+    validations:
+      required: true

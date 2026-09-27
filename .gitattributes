@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.xcodeproj linguist-language=Swift
+*.xcworkspace linguist-generated=true
