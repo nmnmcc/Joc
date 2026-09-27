@@ -284,7 +284,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					38E5B7174F7DDF26E2212836 = {
 						ProvisioningStyle = Automatic;

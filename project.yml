@@ -6,8 +6,6 @@ options:
     iOS: "18.0"
     macOS: "14.0"
     watchOS: "26.0"
-  xcodeVersion: "15.3"
-  projectFormat: xcode15_3
   createIntermediateGroups: true
 
 settings:
