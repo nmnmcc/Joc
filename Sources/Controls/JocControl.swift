@@ -4,9 +4,9 @@ import SwiftUI
 import WidgetKit
 
 @available(iOS 18.0, *)
-struct AnylockControl: ControlWidget {
+struct JocControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
-        StaticControlConfiguration(kind: "cc.nmnm.anylock.control") {
+        StaticControlConfiguration(kind: "cc.nmnm.joc.control") {
             ControlWidgetButton(action: LockMacIntent()) {
                 Label("Lock Mac", systemImage: "lock.fill")
             }
@@ -17,10 +17,10 @@ struct AnylockControl: ControlWidget {
 }
 
 @main
-struct AnylockControlBundle: WidgetBundle {
+struct JocControlBundle: WidgetBundle {
     var body: some Widget {
         if #available(iOS 18.0, *) {
-            AnylockControl()
+            JocControl()
         }
     }
 }

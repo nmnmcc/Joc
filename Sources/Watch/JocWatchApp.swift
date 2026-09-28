@@ -3,16 +3,16 @@
 import SwiftUI
 
 @main
-struct AnylockWatchApp: App {
+struct JocWatchApp: App {
     var body: some Scene {
         WindowGroup {
-            AnylockWatchView()
+            JocWatchView()
         }
     }
 }
 
 @MainActor
-final class AnylockWatchModel: ObservableObject {
+final class JocWatchModel: ObservableObject {
     @Published private(set) var status = LockStatusSnapshot.unknown
     @Published private(set) var isRequesting = false
 
@@ -47,8 +47,8 @@ final class AnylockWatchModel: ObservableObject {
     }
 }
 
-struct AnylockWatchView: View {
-    @StateObject private var model = AnylockWatchModel()
+struct JocWatchView: View {
+    @StateObject private var model = JocWatchModel()
 
     var body: some View {
         VStack(spacing: 10) {

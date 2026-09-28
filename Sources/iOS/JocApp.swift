@@ -3,18 +3,18 @@
 import SwiftUI
 
 @main
-struct AnylockApp: App {
-    @StateObject private var model = AnylockAppModel()
+struct JocApp: App {
+    @StateObject private var model = JocAppModel()
 
     var body: some Scene {
         WindowGroup {
-            AnylockRootView(model: model)
+            JocRootView(model: model)
         }
     }
 }
 
 @MainActor
-final class AnylockAppModel: ObservableObject {
+final class JocAppModel: ObservableObject {
     @Published private(set) var status = LockStatusSnapshot.unknown
     @Published private(set) var isRequesting = false
     @Published private(set) var errorMessage: String?
@@ -79,8 +79,8 @@ final class AnylockAppModel: ObservableObject {
     }
 }
 
-struct AnylockRootView: View {
-    @ObservedObject var model: AnylockAppModel
+struct JocRootView: View {
+    @ObservedObject var model: JocAppModel
 
     var body: some View {
         VStack(spacing: 18) {

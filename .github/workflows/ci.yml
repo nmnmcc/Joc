@@ -20,11 +20,11 @@ jobs:
       - name: Show Xcode version
         run: xcodebuild -version
 
-      - name: Build AnylockMac
+      - name: Build JocMac
         run: >-
           xcodebuild
-          -project Anylock.xcodeproj
-          -scheme AnylockMac
+          -project Joc.xcodeproj
+          -scheme JocMac
           -configuration Debug
           -destination 'generic/platform=macOS'
           -derivedDataPath build/DerivedData

@@ -27,15 +27,16 @@ publishes the result.
 
 | Target | Platform | Role |
 | --- | --- | --- |
-| `Anylock` | iOS | Companion app |
-| `AnylockControl` | iOS 18 | Control Center control |
-| `AnylockWatch` | watchOS | Companion app |
-| `AnylockWatchControl` | watchOS 26 | watchOS control |
-| `AnylockMac` | macOS | Menu bar agent and local screen lock |
+| `Joc` | iOS | Companion app |
+| `JocControl` | iOS 18 | Control Center control |
+| `JocWatch` | watchOS | Companion app |
+| `JocWatchControl` | watchOS 26 | watchOS control |
+| `JocMac` | macOS | Menu bar agent and local screen lock |
 
 The repository and public product name are Joc. The generated Xcode target
-names and bundle identifiers remain `Anylock` so existing Apple IDs and
-CloudKit records continue to work.
+names, bundle identifiers, and CloudKit identifiers all use Joc. Configure
+the App IDs and container listed below before building; data in another
+CloudKit container is not migrated automatically.
 
 ## Requirements
 
@@ -54,7 +55,7 @@ generate
 format
 lint
 build
-open Anylock.xcodeproj
+open Joc.xcodeproj
 ```
 
 The generated project is checked in for convenience. `project.yml` is the
@@ -67,10 +68,10 @@ own development team and provisioning configuration.
 Every target must have iCloud/CloudKit enabled in Apple Developer and must
 use the same iCloud account during development.
 
-1. Register the container `iCloud.cc.nmnm.anylock` and associate it with the
-   app IDs `cc.nmnm.anylock`, `cc.nmnm.anylock.control`,
-   `cc.nmnm.anylock.watchkitapp`, and
-   `cc.nmnm.anylock.watchkitapp.control`.
+1. Register the container `iCloud.cc.nmnm.joc` and associate it with the
+   app IDs `cc.nmnm.joc`, `cc.nmnm.joc.control`,
+   `cc.nmnm.joc.watchkitapp`, and
+   `cc.nmnm.joc.watchkitapp.control`.
 2. In the CloudKit Dashboard Development environment, create the private
    database record type `LockCommand` with these fields:
    `commandID` (String), `action` (String), `createdAt` (Date), and

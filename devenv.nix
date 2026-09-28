@@ -30,8 +30,8 @@
     build.exec = ''
       set -o pipefail
       xcodebuild \
-        -project Anylock.xcodeproj \
-        -scheme Anylock \
+        -project Joc.xcodeproj \
+        -scheme Joc \
         -sdk iphonesimulator \
         -destination 'generic/platform=iOS Simulator' \
         CODE_SIGNING_ALLOWED=NO \

@@ -4,7 +4,7 @@ import AppKit
 import SwiftUI
 
 @main
-struct AnylockMacApp: App {
+struct JocMacApp: App {
     @StateObject private var agent: MacAgent
 
     init() {
@@ -31,7 +31,7 @@ final class MacAgent: ObservableObject {
     private var pollTask: Task<Void, Never>?
     private var isPolling = false
     private var hasRemoteStatus = false
-    private let processedCommandKey = "Anylock.lastProcessedCommandID"
+    private let processedCommandKey = "Joc.lastProcessedCommandID"
 
     deinit {
         pollTask?.cancel()
@@ -86,7 +86,7 @@ final class MacAgent: ObservableObject {
             await pollForCommand()
 
             do {
-                try await Task.sleep(nanoseconds: AnylockConfiguration.pollingIntervalNanoseconds)
+                try await Task.sleep(nanoseconds: JocConfiguration.pollingIntervalNanoseconds)
             } catch {
                 return
             }
@@ -109,7 +109,7 @@ final class MacAgent: ObservableObject {
                 return
             }
 
-            guard command.action == AnylockConfiguration.lockAction else {
+            guard command.action == JocConfiguration.lockAction else {
                 return
             }
 

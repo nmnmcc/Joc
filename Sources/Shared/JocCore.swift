@@ -3,8 +3,8 @@
 import CloudKit
 import Foundation
 
-enum AnylockConfiguration {
-    static let containerIdentifier = "iCloud.cc.nmnm.anylock"
+enum JocConfiguration {
+    static let containerIdentifier = "iCloud.cc.nmnm.joc"
     static let commandRecordType = "LockCommand"
     static let currentCommandRecordName = "current"
     static let statusRecordType = "LockStatus"
@@ -97,7 +97,7 @@ struct LockStatusSnapshot: Sendable, Equatable {
     }
 }
 
-enum AnylockError: LocalizedError {
+enum JocError: LocalizedError {
     case invalidCommand
     case accountUnavailable
 
@@ -114,25 +114,25 @@ enum AnylockError: LocalizedError {
 actor CloudKitStore {
     private let database: CKDatabase
 
-    init(container: CKContainer = CKContainer(identifier: AnylockConfiguration.containerIdentifier)) {
+    init(container: CKContainer = CKContainer(identifier: JocConfiguration.containerIdentifier)) {
         database = container.privateCloudDatabase
     }
 
     func requestLock(source: String) async throws -> LockCommand {
         let command = LockCommand(
             id: UUID(),
-            action: AnylockConfiguration.lockAction,
+            action: JocConfiguration.lockAction,
             createdAt: Date(),
             source: source
         )
 
-        let recordID = CKRecord.ID(recordName: AnylockConfiguration.currentCommandRecordName)
+        let recordID = CKRecord.ID(recordName: JocConfiguration.currentCommandRecordName)
         let record: CKRecord
 
         do {
             record = try await database.record(for: recordID)
         } catch let error as CKError where error.code == .unknownItem {
-            record = CKRecord(recordType: AnylockConfiguration.commandRecordType, recordID: recordID)
+            record = CKRecord(recordType: JocConfiguration.commandRecordType, recordID: recordID)
         }
 
         record["commandID"] = command.id.uuidString as CKRecordValue
@@ -145,7 +145,7 @@ actor CloudKitStore {
     }
 
     func latestCommand() async throws -> LockCommand? {
-        let recordID = CKRecord.ID(recordName: AnylockConfiguration.currentCommandRecordName)
+        let recordID = CKRecord.ID(recordName: JocConfiguration.currentCommandRecordName)
         let record: CKRecord
 
         do {
@@ -158,7 +158,7 @@ actor CloudKitStore {
               let action = record["action"] as? String,
               let createdAt = record["createdAt"] as? Date
         else {
-            throw AnylockError.invalidCommand
+            throw JocError.invalidCommand
         }
 
         return LockCommand(
@@ -170,7 +170,7 @@ actor CloudKitStore {
     }
 
     func fetchStatus() async throws -> LockStatusSnapshot? {
-        let id = CKRecord.ID(recordName: AnylockConfiguration.currentStatusRecordName)
+        let id = CKRecord.ID(recordName: JocConfiguration.currentStatusRecordName)
 
         do {
             let record = try await database.record(for: id)
@@ -181,13 +181,13 @@ actor CloudKitStore {
     }
 
     func updateStatus(_ snapshot: LockStatusSnapshot) async throws {
-        let id = CKRecord.ID(recordName: AnylockConfiguration.currentStatusRecordName)
+        let id = CKRecord.ID(recordName: JocConfiguration.currentStatusRecordName)
         let record: CKRecord
 
         do {
             record = try await database.record(for: id)
         } catch let error as CKError where error.code == .unknownItem {
-            record = CKRecord(recordType: AnylockConfiguration.statusRecordType, recordID: id)
+            record = CKRecord(recordType: JocConfiguration.statusRecordType, recordID: id)
         }
 
         record["state"] = snapshot.state.rawValue as CKRecordValue

@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC515231906930B9F6FDCE6 /* JocWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078FC6DCA344B2169F65F150 /* JocWatchApp.swift */; };
+		292F12E01DC4D49F5B1988FB /* ScreenLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D2DF696CE2B198A868E3 /* ScreenLock.swift */; };
+		39785F64F7DE3DD5A9ABE25F /* JocCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA9B5C40F1C0074B6860F3 /* JocCore.swift */; };
+		3A09EE50F45072A88B216CAF /* LockMacIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4B0886699DD16F57AC98D /* LockMacIntent.swift */; };
+		4A3F4E45FD4E205C71051EE9 /* JocWatchControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E141CF58032C9C9DD651D /* JocWatchControl.swift */; };
+		51AF9B652941BD818E0E62F4 /* JocCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA9B5C40F1C0074B6860F3 /* JocCore.swift */; };
+		54C29C537D04ADBFD92C912D /* JocControl.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 82DA9600C785B3F56A0F6FE7 /* JocControl.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B261303904849570BCF7756 /* JocCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA9B5C40F1C0074B6860F3 /* JocCore.swift */; };
+		651B2FF0960F695437092C7B /* JocControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FB0DBE93B6DE1C136A63D8 /* JocControl.swift */; };
+		66AED9569ECB34ADFDC9BA97 /* JocCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA9B5C40F1C0074B6860F3 /* JocCore.swift */; };
+		70472A32B7BEFD842AEADA01 /* ScreenLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D2DF696CE2B198A868E3 /* ScreenLock.swift */; };
+		86D792F2E27501E97E95B3D3 /* JocWatchControl.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 814F2D3BC58D1B97B0383C8D /* JocWatchControl.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99A6BD6CE0B69A5150136390 /* JocWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CA37B7CEA468D92D3FA84487 /* JocWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A8902AD6A092AE160AB81E85 /* ScreenLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D2DF696CE2B198A868E3 /* ScreenLock.swift */; };
+		BFC43B59250ECC5D5E67B8A7 /* JocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB13F928BD34B5034BA49D7D /* JocApp.swift */; };
+		CDE4F43A4A5F7E0EB3902505 /* JocCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA9B5C40F1C0074B6860F3 /* JocCore.swift */; };
+		CF08F542BD8577DA0AE15F38 /* JocMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CDF813FD2D42130D7499C /* JocMacApp.swift */; };
+		DDE64AC1E4C7226A62CA204C /* ScreenLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D2DF696CE2B198A868E3 /* ScreenLock.swift */; };
+		EEC8951E27961FFFB5CAE3FA /* ScreenLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D2DF696CE2B198A868E3 /* ScreenLock.swift */; };
+		F5D103C83261DB451F59BC02 /* LockMacIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4B0886699DD16F57AC98D /* LockMacIntent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8503F9608117C16D3CACC368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0A00A05DDBE842517E5344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 039D90AEC236359C7217B2FD;
+			remoteInfo = JocWatchControl;
+		};
+		E5FCEA7D79FFE126DE684B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0A00A05DDBE842517E5344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD233B8A84708F9E797C4D7F;
+			remoteInfo = JocWatch;
+		};
+		F20D1C5ECC8D0C031906178B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0A00A05DDBE842517E5344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE460EB401E2E1CD97FA7630;
+			remoteInfo = JocControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B5BCD496EDBD69D74CA3A53 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				86D792F2E27501E97E95B3D3 /* JocWatchControl.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF7E5299EB6851EE2471799 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				54C29C537D04ADBFD92C912D /* JocControl.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8F61196E9606E764E41D08E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				99A6BD6CE0B69A5150136390 /* JocWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0448D2DF696CE2B198A868E3 /* ScreenLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLock.swift; sourceTree = "<group>"; };
+		078FC6DCA344B2169F65F150 /* JocWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JocWatchApp.swift; sourceTree = "<group>"; };
+		0BC4B0886699DD16F57AC98D /* LockMacIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockMacIntent.swift; sourceTree = "<group>"; };
+		0EEA9B5C40F1C0074B6860F3 /* JocCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JocCore.swift; sourceTree = "<group>"; };
+		33AC0EA455F39AF0A10BE9A0 /* Joc.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Joc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FB0DBE93B6DE1C136A63D8 /* JocControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JocControl.swift; sourceTree = "<group>"; };
+		7649F7689FEBC3C1FA743562 /* JocWidgetExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "JocWidgetExtension-Info.plist"; sourceTree = "<group>"; };
+		814F2D3BC58D1B97B0383C8D /* JocWatchControl.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JocWatchControl.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DA9600C785B3F56A0F6FE7 /* JocControl.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = JocControl.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DB7C932F36F31348C6647E /* JocMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JocMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA37B7CEA468D92D3FA84487 /* JocWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JocWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20CDF813FD2D42130D7499C /* JocMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JocMacApp.swift; sourceTree = "<group>"; };
+		F27E141CF58032C9C9DD651D /* JocWatchControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JocWatchControl.swift; sourceTree = "<group>"; };
+		FB13F928BD34B5034BA49D7D /* JocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JocApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1DB0434C269A35B6A0051D80 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB13F928BD34B5034BA49D7D /* JocApp.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		28944C4BFDF949E2F24739CF = {
+			isa = PBXGroup;
+			children = (
+				977EEC62B60304DE58827E2A /* Sources */,
+				CD39F151C38CB1879D08E602 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		778E596C4A8D29A17583D100 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				078FC6DCA344B2169F65F150 /* JocWatchApp.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		977EEC62B60304DE58827E2A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				97E35E967605C5ED72382EB5 /* Controls */,
+				1DB0434C269A35B6A0051D80 /* iOS */,
+				F809B219659EB292D87B1D02 /* Mac */,
+				9DD848A294A0EEAB4EBDDE19 /* Shared */,
+				778E596C4A8D29A17583D100 /* Watch */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		97E35E967605C5ED72382EB5 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				46FB0DBE93B6DE1C136A63D8 /* JocControl.swift */,
+				F27E141CF58032C9C9DD651D /* JocWatchControl.swift */,
+				7649F7689FEBC3C1FA743562 /* JocWidgetExtension-Info.plist */,
+				0BC4B0886699DD16F57AC98D /* LockMacIntent.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		9DD848A294A0EEAB4EBDDE19 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0EEA9B5C40F1C0074B6860F3 /* JocCore.swift */,
+				0448D2DF696CE2B198A868E3 /* ScreenLock.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CD39F151C38CB1879D08E602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33AC0EA455F39AF0A10BE9A0 /* Joc.app */,
+				82DA9600C785B3F56A0F6FE7 /* JocControl.appex */,
+				92DB7C932F36F31348C6647E /* JocMac.app */,
+				CA37B7CEA468D92D3FA84487 /* JocWatch.app */,
+				814F2D3BC58D1B97B0383C8D /* JocWatchControl.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F809B219659EB292D87B1D02 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				D20CDF813FD2D42130D7499C /* JocMacApp.swift */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		039D90AEC236359C7217B2FD /* JocWatchControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE8A382C2FA3AE062774E03 /* Build configuration list for PBXNativeTarget "JocWatchControl" */;
+			buildPhases = (
+				4277286BB0DEF75BAFEB542B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JocWatchControl;
+			packageProductDependencies = (
+			);
+			productName = JocWatchControl;
+			productReference = 814F2D3BC58D1B97B0383C8D /* JocWatchControl.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		770327E70A52CF4EDA0B0275 /* JocMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E894B1250E5437BCE5241F78 /* Build configuration list for PBXNativeTarget "JocMac" */;
+			buildPhases = (
+				DCB99AF9AB7E71603EE4A0C4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JocMac;
+			packageProductDependencies = (
+			);
+			productName = JocMac;
+			productReference = 92DB7C932F36F31348C6647E /* JocMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC6F665B5788B2D5E19C1971 /* Joc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F911A1DAE3A3775D0E97F6FC /* Build configuration list for PBXNativeTarget "Joc" */;
+			buildPhases = (
+				F23AC9004B04CC3DDC22C763 /* Sources */,
+				CBF7E5299EB6851EE2471799 /* Embed Foundation Extensions */,
+				F8F61196E9606E764E41D08E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B80978702A7B419ACA19CCFA /* PBXTargetDependency */,
+				5B22FA0DAFEE3C4475EE162C /* PBXTargetDependency */,
+			);
+			name = Joc;
+			packageProductDependencies = (
+			);
+			productName = Joc;
+			productReference = 33AC0EA455F39AF0A10BE9A0 /* Joc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD233B8A84708F9E797C4D7F /* JocWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E6A7E12C7F92C32D1F08EA4 /* Build configuration list for PBXNativeTarget "JocWatch" */;
+			buildPhases = (
+				833EB807996FE975F53D2C32 /* Sources */,
+				7B5BCD496EDBD69D74CA3A53 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EC0F603630F046577DB1C69 /* PBXTargetDependency */,
+			);
+			name = JocWatch;
+			packageProductDependencies = (
+			);
+			productName = JocWatch;
+			productReference = CA37B7CEA468D92D3FA84487 /* JocWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE460EB401E2E1CD97FA7630 /* JocControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395CF148075579B91FA3761A /* Build configuration list for PBXNativeTarget "JocControl" */;
+			buildPhases = (
+				90085AAE7FEE92150C053E8F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JocControl;
+			packageProductDependencies = (
+			);
+			productName = JocControl;
+			productReference = 82DA9600C785B3F56A0F6FE7 /* JocControl.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE0A00A05DDBE842517E5344 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					039D90AEC236359C7217B2FD = {
+						ProvisioningStyle = Automatic;
+					};
+					770327E70A52CF4EDA0B0275 = {
+						ProvisioningStyle = Automatic;
+					};
+					BC6F665B5788B2D5E19C1971 = {
+						ProvisioningStyle = Automatic;
+					};
+					BD233B8A84708F9E797C4D7F = {
+						ProvisioningStyle = Automatic;
+					};
+					CE460EB401E2E1CD97FA7630 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0D7219D02770B41E157113F6 /* Build configuration list for PBXProject "Joc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 28944C4BFDF949E2F24739CF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC6F665B5788B2D5E19C1971 /* Joc */,
+				CE460EB401E2E1CD97FA7630 /* JocControl */,
+				770327E70A52CF4EDA0B0275 /* JocMac */,
+				BD233B8A84708F9E797C4D7F /* JocWatch */,
+				039D90AEC236359C7217B2FD /* JocWatchControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4277286BB0DEF75BAFEB542B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39785F64F7DE3DD5A9ABE25F /* JocCore.swift in Sources */,
+				4A3F4E45FD4E205C71051EE9 /* JocWatchControl.swift in Sources */,
+				F5D103C83261DB451F59BC02 /* LockMacIntent.swift in Sources */,
+				DDE64AC1E4C7226A62CA204C /* ScreenLock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		833EB807996FE975F53D2C32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51AF9B652941BD818E0E62F4 /* JocCore.swift in Sources */,
+				0DC515231906930B9F6FDCE6 /* JocWatchApp.swift in Sources */,
+				EEC8951E27961FFFB5CAE3FA /* ScreenLock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90085AAE7FEE92150C053E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651B2FF0960F695437092C7B /* JocControl.swift in Sources */,
+				66AED9569ECB34ADFDC9BA97 /* JocCore.swift in Sources */,
+				3A09EE50F45072A88B216CAF /* LockMacIntent.swift in Sources */,
+				292F12E01DC4D49F5B1988FB /* ScreenLock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB99AF9AB7E71603EE4A0C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B261303904849570BCF7756 /* JocCore.swift in Sources */,
+				CF08F542BD8577DA0AE15F38 /* JocMacApp.swift in Sources */,
+				A8902AD6A092AE160AB81E85 /* ScreenLock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23AC9004B04CC3DDC22C763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC43B59250ECC5D5E67B8A7 /* JocApp.swift in Sources */,
+				CDE4F43A4A5F7E0EB3902505 /* JocCore.swift in Sources */,
+				70472A32B7BEFD842AEADA01 /* ScreenLock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B22FA0DAFEE3C4475EE162C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD233B8A84708F9E797C4D7F /* JocWatch */;
+			targetProxy = E5FCEA7D79FFE126DE684B28 /* PBXContainerItemProxy */;
+		};
+		9EC0F603630F046577DB1C69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 039D90AEC236359C7217B2FD /* JocWatchControl */;
+			targetProxy = 8503F9608117C16D3CACC368 /* PBXContainerItemProxy */;
+		};
+		B80978702A7B419ACA19CCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE460EB401E2E1CD97FA7630 /* JocControl */;
+			targetProxy = F20D1C5ECC8D0C031906178B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D69A3CFA9D992F1E013ADF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		3C6E6808BE8E0F49C5B9433A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/Joc.entitlements;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Joc;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cc.nmnm.joc;
+				INFOPLIST_KEY_WKWatchKitApp = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		4603D95ED8B205CCB9BF0050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/Joc.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Joc;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47CB43F571E539F33FE99C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/Joc.entitlements;
+				INFOPLIST_FILE = "Sources/Controls/JocWidgetExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc.control;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49371314BC0C75924A7BF2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/Joc.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Joc;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A2AEE8DA585D1A8C6593B8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/Joc.entitlements;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Joc;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cc.nmnm.joc;
+				INFOPLIST_KEY_WKWatchKitApp = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		57CFD0BC156013BD80FF7FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/Joc.entitlements;
+				INFOPLIST_FILE = "Sources/Controls/JocWidgetExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc.watchkitapp.control;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		5A4E5D02826AFED24AC0459E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		61F1B1AFC1143E95F96D5ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/Joc.entitlements;
+				INFOPLIST_FILE = "Sources/Controls/JocWidgetExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc.control;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		782A0FD21B6530D29E72A466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/JocMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Joc;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSSupportsAutomaticTermination = NO;
+				INFOPLIST_KEY_NSSupportsSuddenTermination = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7DAB5C35E2722075304CD8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/Joc.entitlements;
+				INFOPLIST_FILE = "Sources/Controls/JocWidgetExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc.watchkitapp.control;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		B47905F48C20E59549BA9A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/Entitlements/JocMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Joc;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSSupportsAutomaticTermination = NO;
+				INFOPLIST_KEY_NSSupportsSuddenTermination = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.nmnm.joc;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D7219D02770B41E157113F6 /* Build configuration list for PBXProject "Joc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4E5D02826AFED24AC0459E /* Debug */,
+				0D69A3CFA9D992F1E013ADF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		395CF148075579B91FA3761A /* Build configuration list for PBXNativeTarget "JocControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61F1B1AFC1143E95F96D5ACC /* Debug */,
+				47CB43F571E539F33FE99C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4CE8A382C2FA3AE062774E03 /* Build configuration list for PBXNativeTarget "JocWatchControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CFD0BC156013BD80FF7FC8 /* Debug */,
+				7DAB5C35E2722075304CD8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9E6A7E12C7F92C32D1F08EA4 /* Build configuration list for PBXNativeTarget "JocWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A2AEE8DA585D1A8C6593B8B /* Debug */,
+				3C6E6808BE8E0F49C5B9433A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E894B1250E5437BCE5241F78 /* Build configuration list for PBXNativeTarget "JocMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				782A0FD21B6530D29E72A466 /* Debug */,
+				B47905F48C20E59549BA9A53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F911A1DAE3A3775D0E97F6FC /* Build configuration list for PBXNativeTarget "Joc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49371314BC0C75924A7BF2C8 /* Debug */,
+				4603D95ED8B205CCB9BF0050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE0A00A05DDBE842517E5344 /* Project object */;
+}

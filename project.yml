@@ -1,4 +1,4 @@
-name: Anylock
+name: Joc
 
 options:
   bundleIdPrefix: cc.nmnm
@@ -16,83 +16,83 @@ settings:
     CURRENT_PROJECT_VERSION: "1"
 
 targets:
-  Anylock:
+  Joc:
     type: application
     platform: iOS
     sources:
       - path: Sources/Shared
       - path: Sources/iOS
     dependencies:
-      - target: AnylockControl
+      - target: JocControl
         embed: true
-      - target: AnylockWatch
+      - target: JocWatch
     copyFiles:
       - destination: watch
         files:
-          - target: AnylockWatch
+          - target: JocWatch
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.anylock
-        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/Anylock.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.joc
+        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/Joc.entitlements
         GENERATE_INFOPLIST_FILE: true
         INFOPLIST_KEY_CFBundleDisplayName: Joc
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true
         TARGETED_DEVICE_FAMILY: "1,2"
 
-  AnylockControl:
+  JocControl:
     type: app-extension
     platform: iOS
     sources:
       - path: Sources/Shared
       - path: Sources/Controls
         excludes:
-          - AnylockWatchControl.swift
+          - JocWatchControl.swift
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.anylock.control
-        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/Anylock.entitlements
-        INFOPLIST_FILE: Sources/Controls/WidgetExtension-Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.joc.control
+        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/Joc.entitlements
+        INFOPLIST_FILE: Sources/Controls/JocWidgetExtension-Info.plist
         SKIP_INSTALL: true
         TARGETED_DEVICE_FAMILY: "1,2"
 
-  AnylockWatch:
+  JocWatch:
     type: application
     platform: watchOS
     sources:
       - path: Sources/Shared
       - path: Sources/Watch
         excludes:
-          - AnylockWatchControl.swift
+          - JocWatchControl.swift
     dependencies:
-      - target: AnylockWatchControl
+      - target: JocWatchControl
         embed: true
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.anylock.watchkitapp
-        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/Anylock.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.joc.watchkitapp
+        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/Joc.entitlements
         GENERATE_INFOPLIST_FILE: true
         INFOPLIST_KEY_CFBundleDisplayName: Joc
-        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: cc.nmnm.anylock
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: cc.nmnm.joc
         INFOPLIST_KEY_WKWatchKitApp: true
         TARGETED_DEVICE_FAMILY: "4"
 
-  AnylockWatchControl:
+  JocWatchControl:
     type: app-extension
     platform: watchOS
     sources:
       - path: Sources/Shared
       - path: Sources/Controls
         excludes:
-          - AnylockControl.swift
+          - JocControl.swift
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.anylock.watchkitapp.control
-        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/Anylock.entitlements
-        INFOPLIST_FILE: Sources/Controls/WidgetExtension-Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.joc.watchkitapp.control
+        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/Joc.entitlements
+        INFOPLIST_FILE: Sources/Controls/JocWidgetExtension-Info.plist
         SKIP_INSTALL: true
         TARGETED_DEVICE_FAMILY: "4"
 
-  AnylockMac:
+  JocMac:
     type: application
     platform: macOS
     sources:
@@ -100,8 +100,8 @@ targets:
       - path: Sources/Mac
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.anylock
-        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/AnylockMac.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: cc.nmnm.joc
+        CODE_SIGN_ENTITLEMENTS: Sources/Entitlements/JocMac.entitlements
         GENERATE_INFOPLIST_FILE: true
         INFOPLIST_KEY_CFBundleDisplayName: Joc
         INFOPLIST_KEY_LSUIElement: true

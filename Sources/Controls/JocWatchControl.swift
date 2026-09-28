@@ -4,9 +4,9 @@ import SwiftUI
 import WidgetKit
 
 @available(watchOS 26.0, *)
-struct AnylockWatchControl: ControlWidget {
+struct JocWatchControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
-        StaticControlConfiguration(kind: "cc.nmnm.anylock.watch-control") {
+        StaticControlConfiguration(kind: "cc.nmnm.joc.watch-control") {
             ControlWidgetButton(action: LockMacIntent()) {
                 Label("Lock Mac", systemImage: "lock.fill")
             }
@@ -17,10 +17,10 @@ struct AnylockWatchControl: ControlWidget {
 }
 
 @main
-struct AnylockWatchControlBundle: WidgetBundle {
+struct JocWatchControlBundle: WidgetBundle {
     var body: some Widget {
         if #available(watchOS 26.0, *) {
-            AnylockWatchControl()
+            JocWatchControl()
         }
     }
 }
